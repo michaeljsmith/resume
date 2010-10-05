@@ -1,0 +1,164 @@
+% LaTeX resume using res.cls
+\documentclass{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font  
+\setlength{\topmargin}{-0.6in}  % Start text higher on the page 
+\setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
+\setlength{\headsep}{0.2in}     % space between header and text
+\setlength{\headheight}{12pt}   % make room for header
+\usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\lhead{\hspace*{-\sectionwidth}Michael Smith} % force lhead all the way left
+\rhead{Page \thepage}  % put page number at right
+\cfoot{}  % the footer is empty
+\pagestyle{fancy} % set pagestyle for the document
+
+\begin{document} 
+\thispagestyle{empty} % this page does not have a header
+\name{Michael Smith}
+\address{120 Rose St\\
+Fitzroy, VIC 3065\\
++61 (0) 421 487 249}
+
+\begin{resume}
+\vspace{0.1in}
+ 
+\section{Employment History} 
+\vspace{0.1in} 
+	{\bf Programmer} \\
+	Endgame Studios \\
+	July 2009 - Present \\
+
+	Work on application for playing 3D-spatialized sound over headphones.
+	One application was used for calibration and generation of transfer functions,
+	which need to be computed individually for each user/headphone pair. Work also
+	required to interface with kernel level devices in Windows to intercept 7.1
+	sound and render it over headphones.
+
+	Development of small-scale retail software for IPhone and Android platforms,
+	including games and musical apps. Working in small teams or alone on all
+	aspects of project development.
+
+	Development of games for Nintendo DS. Collision and physics behaviour for 2D
+	game. Image analysis for photos taken using console camera.
+
+	{\bf Software Development Consultant} \\
+	Crytek \\
+	December 2008 - July 2009 \\
+
+	Primary responsibility involved creation of game asset pipeline
+	allowing use of 3D graphics assets created in Softimage XSI and Autodesk Maya
+	3D graphics packages in Crytek's game engine (CryEngine 2). Emphasis was on
+	a robust and intuitive experience for artists in creating game assets.
+
+	{\bf Lead Tools Programmer} \\
+	Crytek \\
+	December 2007 - December 2008 \\
+
+	Role involved creation and management of the tools programming group as
+	part of the R\&D department. This group was responsible for all proprietary
+	software used in the creation of software using the Crytek engine.
+
+	Position also included a strong element of technical support, both in fielding
+	questions from the technical support team regarding tools, and in supporting
+	in-house developers in creating games.
+
+	{\bf Senior R\&D Programmer} \\
+	Crytek \\
+	November 2005 - November 2007 \\
+
+	Creation and maintenance of tools used in creation of games, both by in-house
+	developers and licensees of game engine.
+
+	Development of facial animation package, allowing users to combine rich vertex
+	morph targets and skeletal animations into rich layered expressions using
+	spline interpolation. Animations could be created using a graphical editor and
+	viewed in real-time, even as characters were being used in-game. Features were
+	included for smoothing and cleaning motion-captured data.
+
+	Performance analysis and optimization of game and engine code. Use of
+	profiling software for finding and solving performance bottlenecks in
+	speed-critical code.
+
+	Memory optimization of various areas of game and engine code.
+
+	Creation and maintenance of support tools for importing game assets from
+	modelling packages, in particular Autodesk 3DS Max. Assets included 3D models,
+	both static and skinned characters, as well as animation data.
+
+	{\bf Programmer} \\
+	THQ/BlueTongue \\
+	June 2005 - September 2005 \\
+
+	Worked on game code for Gamecube and Playstation 2. Enemy pathfinding and boss
+	enemy behaviour. Also worked on Tutorial mode for game, instructing users on
+	how to play the game.
+
+	{\bf Programmer} \\
+	Torus Games \\
+	November 1999 - December 2003 \\
+
+	Worked on 14 game titles for various platforms. All aspects of game creation
+	covered, from asset management software to interfacing with console graphics
+	hardware to high-level game content code.
+
+	Creation of 3D software renderer for embedded platforms. Performance was
+	extremely critical - majority of executed code was written in ARM assembly.
+	Engine was based on a Binary Space Partitioning (BSP) tree (as used in games like
+	Quake). Engine included texture mapping, realistic lighting via lightmaps
+	(pre-computed and dynamic) and animated characters. Memory and CPU were both
+	highly restricted.
+
+\section{Education}
+\vspace{0.1in} 
+
+    {\bf Bachelor of Computer Science and Computing (Hons)} \\
+	1999 - 2004 Monash University, Melbourne, Australia
+
+	Honours Thesis: Lossless Image Coding using Probability Distribution Blending
+
+	Standard lossless image encoders employ arithmetic prediction algorithms to
+	reduce the entropy of encoded symbols. Many combine the outputs of multiple
+	predictors to produce a single predicted value. This project instead combined
+	the probability distributions created by each predictor into a single,
+	possibly multi-modal distribution, which is then fed directly into the entropy
+	coder.
+
+	A subtext of the project was the use of the most successful model as a
+	high-level description of the image, as an attempt to provide a useful
+	segmentation of the image into logical partitions.
+	 
+\section{Skills and Focus} 
+\vspace{0.2in} 
+
+I have a broad set of software development skills, and consider myself strong
+in algorithm/data structure design, architecture and debugging. I have a good
+understanding of multithreading design and scalability.
+
+I consider software development to be all about judgement. There are no rules
+that one can follow that work in every case - making the correct call on
+architecture and design is something that requires a great deal of experience
+to be able to balance all the competing requirements. Similarly when debugging
+it is important to figure out the best way to answer the question as quickly
+as possible. I think it's actually science on a small scale - hypothesizing,
+developing a means of testing that hypothesis and then repeating many times a
+day.
+
+\section{Interests}
+
+I found my experience working at Crytek in Germany to be quite enlightening -
+people from all over the world were employed there, and it was really
+eye-opening to be exposed to such a wide variety of European and world
+cultures within one place. I'm always driven to develop a stronger
+understanding of things. For instance, what led certain cultures to develop
+certain traits relative to others? Does it come down to historical factors? Is
+it geographical? Is it the weather?  In the same way I'm always interested in
+the roots of things, words, ideas.  For this reason I have a keen interest in
+history (although I have a terrible head for dates).
+
+\section{References}
+
+References available on demand.
+
+\end{resume}
+\end{document}
